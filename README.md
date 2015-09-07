@@ -12,6 +12,7 @@ index#answer
   on a click event the quote "floats up" to the top, probably with a pic or meme of the one of the four golden girls.
 concerns 
   I'm still thinking about how to involve the db more than just holding the initial quotes and images.
+  I will attempt to deployto heroku as well. 
   
   
   
