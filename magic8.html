@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>2048</title>
-    <link rel="stylesheet" media="all" href="stylesheets/magic8.css"/>
+    <meta charset="utf-8">
+    <title>Golden Wisdom!</title>
+    <link rel="stylesheet" media="all" href="app/assets/stylesheets/magic8.css"/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="javascripts/magic8.js"></script>
+    <script type="text/javascript" src="app/assets/javascripts/magic8.js"></script>
   </head>
   <body>
     <div id="homepage">
       <p>Welcome to Golden Wisdom? Are you stumped on a potentially life -changing decision? Do you need some wisdom that only long life can bring? Then ask your question here and get a quick answer from one of the Golden Girls.</p>
     </div>
     <div class="question">
-      <form action="action_page.php">
-        <fieldset>
-          <legend>Dear Golden Girls</legend>
+   
+
           Here's My Question:<br>
-          <input type="text" name=" question" value="">
+          <input type="text" id="input" name="Question" value="">
           <br>
           <br><br>
-          <input type="submit" value="Ask a Golden Girl">
-      </fieldset>
-      </form>
+          <button id="submit">"Ask a Golden Girl"</button>
+    </div>
     </div></div>
     <div class=""></div> 
   </body>
 </html>
+
+<!--  -->
