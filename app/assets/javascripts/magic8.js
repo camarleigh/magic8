@@ -9,18 +9,18 @@ $(document).ready(function(){
     // Retrieve the text from the input box
     console.log("puppies")
     var question = document.getElementById("input").value;
-    // Verify the question is a valid
+    // Verify the input is a valid question by presence of a ?
     var validTest = /\?/g;
     var qMark = question.match(validTest)
 
     console.log(qMark)
 
-
-//     var str = 'For more information, see Chapter 3.4.5.1';
-// var re = /(chapter \d+(\.\d)*)/i;
-// var found = str.match(re);
-
-// console.log(found);
+    if (qMark == ["?"]){
+      answerQuestion
+    } else  {
+      alert( "These ladies are not exestentialists. Please use a question mark
+        to ask your question.")
+    }
 
     // if valid {
     //       alert("Proper grammar, please! Are you asking a question?
