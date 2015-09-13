@@ -16,35 +16,14 @@ $(document).ready(function(){
     console.log(qMark)
 
     if (qMark == ["?"]){
-      answerQuestion
+      answerQuestion;
     } else  {
-      alert( "These ladies are not exestentialists. Please use a question mark
-        to ask your question.")
+      alert("These ladies are not existentialists. Please use a question mark
+        to ask your question.");
     }
 
-    // if valid {
-    //       alert("Proper grammar, please! Are you asking a question?
-    //         Then you'll probably need a question mark. Thanks! ");
-    //     }
-
-    // // If it doesn't, mark it as a MISS
-    // // Check if the guess matches one of our ships locations    // var i = guess; 
-    // if (board[guess] == 1 ){ 
-    //   board[guess] = "X"; 
-    //   alert("HIT! You sank my Battleship!");
-    // }
-    // // If it does, mark is as a HIT
-    // else if(board[guess] == 0){ 
-    //   board[guess] = "_";
-    //   alert("MISS! Try again!");
-      
-    // } 
-
-    // guess = "";
-    // Reset the question input box
-    // document.getElementById("input").value =""
-
-
+        // Reset the question input box
+    document.getElementById("input").value =""
   }
 
 });  
