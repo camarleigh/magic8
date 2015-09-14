@@ -2,9 +2,17 @@ $(document).ready(function(){
 
 
   $("#submit").click(function(){
+    // rePrintQuestion();
     inputVerify();
-    getRandomImage(random_images_array)
+    getRandomImage(random_images_array);
+    
     });
+
+  // function rePrintQuestion(){
+
+  //   var question = document.getElementById("input").value;
+  //   console.log(question);
+  //   }
 
   function inputVerify(){
     // Retrieve the text from the input box
@@ -19,7 +27,7 @@ $(document).ready(function(){
     if (qMark[0] = "?"){
       // verify = console.log(question);
       $( "#qbox" ).toggle( "slow" );
-      $("#meme").toggle("slow");
+      $( "#homepage" ).toggle( "slow" );
       
     } 
     // else if (validTest = false) { 
@@ -33,25 +41,30 @@ $(document).ready(function(){
 
     // Reset the question input box
     // document.getElementById("input").value =""
+});
 
-}); 
-
-var random_images_array = ["blanchememe1.jpg", "blanchememe10.jpg", "blanchememe2.jpg",
- "blanchememe3.jpg", "blanchememe4.jpg", "blanchememe5.jpg", "blanchememe6.jpg", 
-"blanchememe7.jpg", "blanchememe8.jpg", "blanchememe9.jpg", "dorothymeme1.jpg",
- "dorothymeme2.jpg", "dorothymeme3.jpg", "dorothymeme4.jpg", "dorothymeme5.jpg",
-  "dorothymeme6.jpg", "rosememe1.jpg", "rosememe2.jpg", "rosememe3.jpg",
-   "rosememe4.gif", "sophiameme1.jpg", "sophiameme2.jpg", "sophiameme3.jpg",
+  var random_images_array = ["blanchememe1.jpg", "blanchememe10.jpg", "blanchememe2.jpg",
+    "blanchememe3.jpg", "blanchememe4.jpg", "blanchememe5.jpg", "blanchememe6.jpg", 
+    "blanchememe7.jpg", "blanchememe8.jpg", "blanchememe9.jpg", "dorothymeme1.jpg",
+    "dorothymeme2.jpg", "dorothymeme3.jpg", "dorothymeme4.jpg", "dorothymeme5.jpg",
+    "dorothymeme6.jpg", "rosememe1.jpg", "rosememe2.jpg", "rosememe3.jpg",
+    "rosememe4.gif", "sophiameme1.jpg", "sophiameme2.jpg", "sophiameme3.jpg",
     "sophiameme4.jpg", "sophiameme5.jpg", "sophiameme6.jpg", "sophiameme7.jpg", 
     "sophiameme8.jpg"];
 
-function getRandomImage(imgAr, path) {
-  path = path || 'app/assets/images/'; // default path here
-  var num = Math.floor( Math.random() * imgAr.length );
-  var img = imgAr[ num ];
-  var imgStr = '<img src="' + path + img + '" alt = "">';
-  document.write(imgStr); document.close();
-}
+  function getRandomImage(imgAr, path) {
+    path = path || 'app/assets/images/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+
+    $( "#meme" ).toggle("slow");
+
+    }
+ 
+
+
 
 
 
