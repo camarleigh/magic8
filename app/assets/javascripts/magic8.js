@@ -1,18 +1,31 @@
 $(document).ready(function(){
-
+  
+  $(".reset").toggle("slow");
 
   $("#submit").click(function(){
     rePrintQuestion();
     inputVerify();
     getRandomImage(random_images_array);
+    $(".reset").toggle("slow");
   });
+
+  $(".reset").click(function(){
+    $(".qgrab, #g_image").empty()
+
+      $( "#qbox" ).toggle( "slow" );
+      $( "#homepage" ).toggle( "slow" );
+    $(".reset").toggle("slow");
+ });
+
+
 });
 
 
   function rePrintQuestion(){
 
     var question = document.getElementById("input").value;
-    document.write(question); document.close();
+    // document.write(question); document.close();
+    $(".qgrab").append(question)
   }
 
 
@@ -54,17 +67,21 @@ $(document).ready(function(){
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
     var imgStr = '<img src="' + path + img + '" alt = "">';
-    document.write(imgStr); document.close();
+    // document.write(imgStr); document.close();
 
-    $( "#meme" ).toggle("slow");
+    $( "#g_image" ).append(imgStr);
 
   }
   
 
+// how to clear image and question for redo
 
-
-
-
+ // $("#submit").click(function(){
+ //   $("#reprinted_question, #g_image").empty()
+ //   rePrintQuestion();
+ //   inputVerify();
+ //   getRandomImage(random_images_array);
+ // });
 
 
 // pseudo:
