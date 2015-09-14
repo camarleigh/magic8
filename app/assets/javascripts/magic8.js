@@ -1,5 +1,9 @@
 $(document).ready(function(){
-  
+
+  // var colors = ['EA9123','03AACC','50BD27','FFB90F','D23699','CEAEE8'];
+  // $('body').css({'background': '' + colors[Math.floor(Math.random() *      colors.length)]});
+
+
   $(".reset").toggle("slow");
 
   $("#submit").click(function(){
@@ -7,13 +11,14 @@ $(document).ready(function(){
     inputVerify();
     getRandomImage(random_images_array);
     $(".reset").toggle("slow");
+
   });
 
   $(".reset").click(function(){
     $(".qgrab, #g_image").empty()
 
       $( "#qbox" ).toggle( "slow" );
-      $( "#homepage" ).toggle( "slow" );
+      $( "#homepage" ).toggle( "slow" ); 
     $(".reset").toggle("slow");
  });
 
@@ -24,7 +29,6 @@ $(document).ready(function(){
   function rePrintQuestion(){
 
     var question = document.getElementById("input").value;
-    // document.write(question); document.close();
     $(".qgrab").append(question)
   }
 
@@ -66,22 +70,28 @@ $(document).ready(function(){
     path = path || 'app/assets/images/'; // default path here
     var num = Math.floor( Math.random() * imgAr.length );
     var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" alt = "">';
+    var imgStr = '<img src="' + path + img + '" alt = "" width = "500" height = "377">';
     // document.write(imgStr); document.close();
 
     $( "#g_image" ).append(imgStr);
 
+
+    console.log(imgStr);      
   }
-  
 
-// how to clear image and question for redo
 
- // $("#submit").click(function(){
- //   $("#reprinted_question, #g_image").empty()
- //   rePrintQuestion();
- //   inputVerify();
- //   getRandomImage(random_images_array);
- // });
+
+  // function getRandomColor () {
+  // var hex = Math.floor(Math.random() * 0xFFFFFF);
+  // return "#" + ("000000" + hex.toString(16)).substr(-6);
+  // }
+
+  // function ran_col() { //function name
+  //   var color = '#'; // hexadecimal starting symbol
+  //   var letters = ['EA9123','03AACC','50BD27','FFB90F','D23699','CEAEE8']; //Set your colors here
+  //   color += letters[Math.floor(Math.random() * letters.length)];
+  // }
+
 
 
 // pseudo:
@@ -91,6 +101,8 @@ $(document).ready(function(){
 // if not, ask for a question mark  - WIP
 // if so grab input - yes
 // disappear question box - yes
-// answer with a meme 
-// put question back on page so can remember it
-// button to ask again. 
+// answer with a meme - yes
+// put question back on page so can remember it - yes
+// button to ask again.  - yes
+// reset img and question div - yes
+

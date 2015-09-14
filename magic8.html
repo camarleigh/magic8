@@ -7,20 +7,43 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="app/assets/javascripts/magic8.js"></script>
   </head>
-  <body>
+  <body class="clicked">
     <div id="homepage">
-      <p>Welcome to Golden Wisdom? Are you stumped on a potentially life -changing decision? Do you need some wisdom that only long life can bring? Then ask your question here and get a quick answer from one of the Golden Girls.</p>
+      <h1>Welcome to Golden Wisdom! </h1> 
+      <div class="slider-viewer">
+        <div class="slide-group">
+          <div class="slide slide-1">
+          </div>
+          <div class="slide slide-2">
+          </div>
+          <div class="slide slide-3">
+          </div>
+          <div class="slide slide-4">
+          </div>
+          <div class="slide slide-5">
+          </div>
+        </div>
+        <div class="slide-buttons">
+        </div>
+      </div>
+      <br>
+      <p>Are you stumped on a potentially life -changing decision? Do you need some wisdom that only long life can bring? Then ask your question here and get a quick answer from one of 
+        <br>
+      <img src="app/assets/images/logo.svg.png" alt"">
     </div>
     <div class="question" id="qbox">
    
-          Here's My Question:<br>
-          <input type="text" id="input" name="Question" value="">
+          <h2> Here's My Question: </h2>
+          <br>
+          <input type="text" id="input" name="Question" value="" size="50">
           <br>
           <br><br>
           <button id="submit">"Ask a Golden Girl"</button>
     </div>
-    <div class="qgrab" id="g_image"></div>
-    <div class ="reset">
+   
+    <div class="qgrab"><p> </p></div>
+    <div id="g_image"></div>
+    <div class ="reset" id="reprint">
     <br><br>
     <button id="reset">"Ask another question!"</button>
     </div>

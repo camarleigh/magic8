@@ -1,0 +1,61 @@
+p {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 200%;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+body {
+
+    background-color: #cccccc;
+/*    transition:background-color 0.5s ease;
+*/}
+/*.clicked {
+  background:lightgreen;
+}*/
+
+#homepage {
+
+  text-align: center;
+}
+
+.qgrab.lowercase p{
+    font-size: 500%;
+    color: #cccccc;
+
+}
+
+#g_image{
+
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+}
+
+/*slide-viewer {
+  position: relative;
+  overflow: hidden;
+  height: 300px;}
+
+.slide-group{
+  width: 100%;
+  height: 100%;
+  position: relative;}  
+
+.slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;}
+
+.slide:first-child{
+  display: block;}     */
